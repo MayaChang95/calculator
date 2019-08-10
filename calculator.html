@@ -1,0 +1,65 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Calculator</title>
+		<link rel="stylesheet" type="text/css" href="./Calculator.css">
+	</head>
+	<body>
+	<!-- 	<h1>Calculator</h1> -->
+		<div id = "container">
+			<table>
+				<colgroup>
+					<col span="1" style="width: 10%;">
+			       	<col span="1" style="width: 10%;">
+			       	<col span="1" style="width: 20%;">
+			       	<col span="1" style="width: 20%;">
+				</colgroup>
+
+				<tbody>
+				<tr>
+					<th id = "screen" colspan="4">0</th>
+					
+				</tr>
+
+				<tr>
+					<td colspan = "1"><button onclick="empty()">C</button></td>
+					<td colspan = "1"><button value="(" onclick="buttonValue(this)">(</button></td>
+					<td colspan = "1"><button value=")" onclick="buttonValue(this)">)</button></td>
+					<td colspan = "1"><button value="/" onclick="buttonValue(this)">/</button></td>
+				</tr>
+				<tr>
+					<td colspan = "1"><button value="7" onclick="buttonValue(this)">7</button></td>
+					<td colspan = "1"><button value="8" onclick="buttonValue(this)">8</button></td>
+					<td colspan = "1"><button value="9" onclick="buttonValue(this)">9</button></td>
+					<td colspan = "1"><button value="*" onclick="buttonValue(this)">*</button></td>
+				</tr>
+
+				<tr>
+					<td colspan = "1"><button value="4" onclick="buttonValue(this)">4</button></td>
+					<td colspan = "1"><button value="5" onclick="buttonValue(this)">5</button></td>
+					<td colspan = "1"><button value="6" onclick="buttonValue(this)">6</button></td>
+					<td colspan = "1"><button value="-" onclick="buttonValue(this)">-</button></td>			
+				</tr>
+
+				<tr>
+					<td colspan = "1"><button value="1" onclick="buttonValue(this)">1</button></td>
+					<td colspan = "1"><button value="2" onclick="buttonValue(this)">2</button></td>
+					<td colspan = "1"><button value="3" onclick="buttonValue(this)">3</button></td>
+					<td colspan = "1"><button value="+" onclick="buttonValue(this)">+</button></td>
+					
+				</tr>
+				<tr>
+					<td colspan = "1"><button onclick="del()">Bck</button></td>
+					<td colspan = "1"><button value="0" onclick="buttonValue(this)">0</button></td>
+					<td colspan = "1"><button value="." onclick="buttonValue(this)">.</button></td>				
+					<td colspan = "1"><button value="=" onclick="calculate()">=</button></td>					
+				</tr>
+
+				</tbody>
+			</table>
+		</div>
+		 <script type="text/javascript" src="calculator.js"></script>
+	</body>
+</html>
